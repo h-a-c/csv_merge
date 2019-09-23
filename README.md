@@ -1,2 +1,3 @@
 # csv_merge
-csv_merge application
+
+This application is designed to merge files of the same source together.
