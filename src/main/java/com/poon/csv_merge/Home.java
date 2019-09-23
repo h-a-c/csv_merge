@@ -22,8 +22,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
-        selectFilePanel.setVisible(false);
-        runPanel.setVisible(false);
+        switchPanel(homePanel);
     }
     csvManager cm = new csvManager();
     LinkedList<String> fileList = new LinkedList<String>();
