@@ -34,6 +34,7 @@ public class csvManager {
     }
     
     public LinkedList removeList(String location) {
+        System.out.println(location);
         if(fileList.contains(location)) {
             fileList.remove(location);
         }
@@ -59,7 +60,6 @@ public class csvManager {
     }
     
     public void mergeFiles(String fileName) {
-        System.out.println("----mergeFiles----");
         if(!fileName.contains(".csv")) {
             fileName = fileName + ".csv";
         }
