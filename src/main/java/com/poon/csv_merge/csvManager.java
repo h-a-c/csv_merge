@@ -34,7 +34,6 @@ public class csvManager {
     }
     
     public LinkedList removeList(String location) {
-        System.out.println(location);
         if(fileList.contains(location)) {
             fileList.remove(location);
         }
@@ -80,9 +79,8 @@ public class csvManager {
                     String[] line = new String[headers2.length];
                     for(int j = 0; j < headers2.length; j++) {
                         line[j] = nextRecord[headers2[j]];
-                        System.out.println(nextRecord[headers2[j]]);
                     }
-                    if(line != str) {
+                    if(!Arrays.equals(line, str)) {
                         csvWriter.writeNext(line);
                     }                     
                 }
