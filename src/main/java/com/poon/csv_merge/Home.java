@@ -421,7 +421,7 @@ public class Home extends javax.swing.JFrame {
     private void getHeadersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getHeadersActionPerformed
         try {
             String[] headers = cm.getHeaders(jList1.getSelectedValue());
-             DefaultListModel dlm = new DefaultListModel();
+            DefaultListModel dlm = new DefaultListModel();
             for(Object header: headers) {
                 dlm.addElement(header);
             }

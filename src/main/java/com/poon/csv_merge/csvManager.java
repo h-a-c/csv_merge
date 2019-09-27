@@ -74,7 +74,7 @@ public class csvManager {
             for ( int i = 0; i < fileList.size(); i++) {
                 String currentFile = fileList.get(i);
                 Reader reader = Files.newBufferedReader(Paths.get(currentFile));
-                CSVReader csvReader = new CSVReader(reader);
+                CSVReader csvReader = new CSVReader(reader, ',','"', '|');
                 String[] nextRecord;
                 while ((nextRecord = csvReader.readNext()) !=  null) {
                     String[] line = new String[headers2.length];
